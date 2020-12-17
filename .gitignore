@@ -9,4 +9,5 @@ debug
 *.sublime-workspace
 driver-test-data.tar.gz
 perf
+vendor
 **mongocryptd.pid

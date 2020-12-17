@@ -1,4 +1,4 @@
-module go.mongodb.org/mongo-driver
+module github.com/dreikorn/mongo-go-driver
 
 require (
 	github.com/go-stack/stack v1.8.0
