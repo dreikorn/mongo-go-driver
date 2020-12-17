@@ -14,17 +14,17 @@ import (
 	"strconv"
 	"time"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/bson/bsoncodec"
-	"go.mongodb.org/mongo-driver/bson/primitive"
-	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.mongodb.org/mongo-driver/mongo/readconcern"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/description"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/operation"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/session"
+	"github.com/dreikorn/mongo-go-driver/bson"
+	"github.com/dreikorn/mongo-go-driver/bson/bsoncodec"
+	"github.com/dreikorn/mongo-go-driver/bson/primitive"
+	"github.com/dreikorn/mongo-go-driver/mongo/options"
+	"github.com/dreikorn/mongo-go-driver/mongo/readconcern"
+	"github.com/dreikorn/mongo-go-driver/mongo/readpref"
+	"github.com/dreikorn/mongo-go-driver/x/bsonx/bsoncore"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/description"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/operation"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/session"
 )
 
 const errorInterrupted int32 = 11601

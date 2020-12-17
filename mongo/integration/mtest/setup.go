@@ -16,14 +16,14 @@ import (
 	"strings"
 	"time"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
-	"go.mongodb.org/mongo-driver/mongo/writeconcern"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/connstring"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/description"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/topology"
+	"github.com/dreikorn/mongo-go-driver/bson"
+	"github.com/dreikorn/mongo-go-driver/mongo"
+	"github.com/dreikorn/mongo-go-driver/mongo/options"
+	"github.com/dreikorn/mongo-go-driver/mongo/readpref"
+	"github.com/dreikorn/mongo-go-driver/mongo/writeconcern"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/connstring"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/description"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/topology"
 )
 
 const (

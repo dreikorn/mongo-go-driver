@@ -8,13 +8,13 @@ import (
 	"strconv"
 	"time"
 
-	"go.mongodb.org/mongo-driver/tag"
-	"go.mongodb.org/mongo-driver/version"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/address"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/description"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/session"
+	"github.com/dreikorn/mongo-go-driver/tag"
+	"github.com/dreikorn/mongo-go-driver/version"
+	"github.com/dreikorn/mongo-go-driver/x/bsonx/bsoncore"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/address"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/description"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/session"
 )
 
 // IsMaster is used to run the isMaster handshake operation.

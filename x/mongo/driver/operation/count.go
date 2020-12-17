@@ -13,13 +13,13 @@ import (
 	"errors"
 	"fmt"
 
-	"go.mongodb.org/mongo-driver/event"
-	"go.mongodb.org/mongo-driver/mongo/readconcern"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/description"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/session"
+	"github.com/dreikorn/mongo-go-driver/event"
+	"github.com/dreikorn/mongo-go-driver/mongo/readconcern"
+	"github.com/dreikorn/mongo-go-driver/mongo/readpref"
+	"github.com/dreikorn/mongo-go-driver/x/bsonx/bsoncore"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/description"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/session"
 )
 
 // Performs a count operation

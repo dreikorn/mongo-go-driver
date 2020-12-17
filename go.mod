@@ -1,5 +1,7 @@
 module github.com/dreikorn/mongo-go-driver
 
+go 1.14
+
 require (
 	github.com/go-stack/stack v1.8.0
 	github.com/gobuffalo/genny v0.1.1 // indirect

@@ -7,7 +7,7 @@
 package mongo
 
 import (
-	"go.mongodb.org/mongo-driver/bson"
+	"github.com/dreikorn/mongo-go-driver/bson"
 )
 
 // IndexOptionsBuilder is deprecated and unused.  Use mongo/options.IndexOptions instead.

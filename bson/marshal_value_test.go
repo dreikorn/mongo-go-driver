@@ -10,11 +10,11 @@ import (
 	"io"
 	"testing"
 
-	"go.mongodb.org/mongo-driver/bson/bsoncodec"
-	"go.mongodb.org/mongo-driver/bson/bsontype"
-	"go.mongodb.org/mongo-driver/bson/primitive"
-	"go.mongodb.org/mongo-driver/internal/testutil/assert"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
+	"github.com/dreikorn/mongo-go-driver/bson/bsoncodec"
+	"github.com/dreikorn/mongo-go-driver/bson/bsontype"
+	"github.com/dreikorn/mongo-go-driver/bson/primitive"
+	"github.com/dreikorn/mongo-go-driver/internal/testutil/assert"
+	"github.com/dreikorn/mongo-go-driver/x/bsonx/bsoncore"
 )
 
 // helper type for testing MarshalValue that implements io.Reader

@@ -11,11 +11,11 @@ import (
 	"errors"
 	"fmt"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/bson/bsontype"
-	"go.mongodb.org/mongo-driver/internal/testutil/assert"
-	"go.mongodb.org/mongo-driver/mongo/integration/mtest"
-	"go.mongodb.org/mongo-driver/x/bsonx"
+	"github.com/dreikorn/mongo-go-driver/bson"
+	"github.com/dreikorn/mongo-go-driver/bson/bsontype"
+	"github.com/dreikorn/mongo-go-driver/internal/testutil/assert"
+	"github.com/dreikorn/mongo-go-driver/mongo/integration/mtest"
+	"github.com/dreikorn/mongo-go-driver/x/bsonx"
 )
 
 // Helper functions to compare BSON values and command monitoring expectations.

@@ -13,8 +13,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"go.mongodb.org/mongo-driver/event"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/address"
+	"github.com/dreikorn/mongo-go-driver/event"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/address"
 	"golang.org/x/sync/semaphore"
 )
 

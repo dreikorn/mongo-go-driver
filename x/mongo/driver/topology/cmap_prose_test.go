@@ -13,9 +13,9 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/event"
-	"go.mongodb.org/mongo-driver/internal/testutil/assert"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/operation"
+	"github.com/dreikorn/mongo-go-driver/event"
+	"github.com/dreikorn/mongo-go-driver/internal/testutil/assert"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/operation"
 )
 
 func TestCMAPProse(t *testing.T) {

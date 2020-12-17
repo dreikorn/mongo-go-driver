@@ -13,7 +13,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/connstring"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/connstring"
 )
 
 func TestAppName(t *testing.T) {

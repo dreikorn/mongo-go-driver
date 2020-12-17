@@ -11,10 +11,10 @@ import (
 	"errors"
 	"fmt"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/mongocrypt"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/topology"
+	"github.com/dreikorn/mongo-go-driver/bson"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/mongocrypt"
+	"github.com/dreikorn/mongo-go-driver/x/mongo/driver/topology"
 )
 
 // ErrUnacknowledgedWrite is returned by operations that have an unacknowledged write concern.
