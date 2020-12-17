@@ -240,7 +240,7 @@ func (s *Server) ProcessHandshakeError(err error) {
 	// the description.Server appropriately.
 	desc := description.NewServerFromError(s.address, wrappedConnErr)
 	s.updateDescription(desc)
-	s.pool.clear()
+	s.pool.clear("HandshakeError")
 }
 
 // Description returns a description of the server as of the last heartbeat.
@@ -307,7 +307,7 @@ func (s *Server) ProcessError(err error) {
 		// If the node is shutting down or is older than 4.2, we synchronously clear the pool
 		if cerr.NodeIsShuttingDown() || desc.WireVersion == nil || desc.WireVersion.Max < 8 {
 			s.RequestImmediateCheck()
-			s.pool.clear()
+			s.pool.clear("DriverError")
 		}
 		return
 	}
@@ -317,7 +317,7 @@ func (s *Server) ProcessError(err error) {
 		// If the node is shutting down or is older than 4.2, we synchronously clear the pool
 		if wcerr.NodeIsShuttingDown() || desc.WireVersion == nil || desc.WireVersion.Max < 8 {
 			s.RequestImmediateCheck()
-			s.pool.clear()
+			s.pool.clear("WriteConcernError")
 		}
 		return
 	}
@@ -337,7 +337,7 @@ func (s *Server) ProcessError(err error) {
 
 	// updates description to unknown
 	s.updateDescription(description.NewServerFromError(s.address, err))
-	s.pool.clear()
+	s.pool.clear("UnknownError")
 }
 
 // update handles performing heartbeats and updating any subscribers of the
@@ -522,7 +522,7 @@ func (s *Server) heartbeat(conn *connection) (description.Server, *connection) {
 			saved = err
 			conn = nil
 			if wrappedConnErr := unwrapConnectionError(err); wrappedConnErr != nil {
-				s.pool.clear()
+				s.pool.clear("HeartBeatFailed")
 				// If the server is not connected, give up and exit loop
 				if s.Description().Kind == description.Unknown {
 					break

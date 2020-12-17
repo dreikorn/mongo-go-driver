@@ -538,10 +538,10 @@ func (p *pool) put(c *connection) error {
 }
 
 // clear clears the pool by incrementing the generation
-func (p *pool) clear() {
+func (p *pool) clear(clearingReason string) {
 	if p.monitor != nil {
 		p.monitor.Event(&event.PoolEvent{
-			Type:    event.PoolCleared,
+			Type:    event.PoolCleared + clearingReason,
 			Address: p.address.String(),
 		})
 	}

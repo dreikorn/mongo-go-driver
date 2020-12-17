@@ -417,7 +417,7 @@ func runOperationInThread(t *testing.T, operation map[string]interface{}, testIn
 		}
 		return c.Close()
 	case "clear":
-		s.pool.clear()
+		s.pool.clear("Test")
 	case "close":
 		return s.pool.disconnect(context.Background())
 	default:
